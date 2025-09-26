@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Analisador de e-mails</title>
+</head>
+<body>
+    <div class="instructions">
+        <p>Faça o upload de um arquivo .txt ou .pdf que contenha um e-mail para que ele seja avaliado.</p>
+    </div>
+    <div class="content">
+        <div class="form">
+            <form action="/enviararquivo" method="post" enctype="multipart/form-data">
+                <div class="upload-arq">
+                    <input type="file" name="arquivo" id="arquivo" accept=".txt,.pdf">
+                </div>
+                <div>
+                    <button type="submit">enviar</button>
+                </div>
+            </form>
+        </div>
+        <div class="response">
+            <h4>Resposta:</h4>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
