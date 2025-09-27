@@ -1,4 +1,4 @@
-async def lerTxt(arquivo):
+def lerTxt(arquivo):
     # with open (arquivo, "r") as txt:
     #     texto = ""
     #     for pagina in txt:

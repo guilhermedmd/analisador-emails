@@ -1,4 +1,4 @@
-from flask import Flask, render_template,request
+from flask import Flask, render_template, request, jsonify
 import leitor_pdf
 import leitor_txt
 import gemini_api
@@ -17,12 +17,12 @@ def pagina():
 def enviarEmail():
     arquivo = request.files['arquivo']
     if arquivo.filename.endswith(".pdf"):
-        conteudo = leitor_pdf.lerPdf(arquivo)
-        gemini_api.avaliar_email(conteudo)
+        conteudo_email = leitor_pdf.lerPdf(arquivo)
+        gemini_api.avaliar_email(conteudo_email)
         return render_template("index.html")
     elif arquivo.filename.endswith(".txt"):
-        conteudo = leitor_txt.lerTxt(arquivo)
-        gemini_api.avaliar_email(conteudo)
+        conteudo_email = leitor_txt.lerTxt(arquivo)
+        gemini_api.avaliar_email(conteudo_email)
         return render_template("index.html")    
 
 if __name__ == "__main__":
