@@ -18,12 +18,15 @@ def enviarEmail():
     arquivo = request.files['arquivo']
     if arquivo.filename.endswith(".pdf"):
         conteudo_email = leitor_pdf.lerPdf(arquivo)
-        gemini_api.avaliar_email(conteudo_email)
-        return render_template("index.html")
+        resposta = gemini_api.avaliar_email(conteudo_email)
+        # return jsonify({"mensagem": resposta})
+        return render_template("index.html", dados=resposta)
+
     elif arquivo.filename.endswith(".txt"):
         conteudo_email = leitor_txt.lerTxt(arquivo)
-        gemini_api.avaliar_email(conteudo_email)
-        return render_template("index.html")    
+        resposta = gemini_api.avaliar_email(conteudo_email)
+        # return jsonify({"mensagem": resposta})
+        return render_template("index.html", dados=resposta)
 
 if __name__ == "__main__":
     app.run(debug=True)

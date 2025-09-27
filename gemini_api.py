@@ -14,5 +14,5 @@ def avaliar_email(conteudo_email):
     "Produtivo: Emails que requerem uma ação ou resposta específica (ex.: solicitações de suporte técnico, atualização sobre casos em aberto, dúvidas sobre o sistema)." \
     "Improdutivo: Emails que não necessitam de uma ação imediata (ex.: mensagens de felicitações, agradecimentos). É importante também elaborar uma resposta, mas apenas caso seja necessário." \
     "Segue abaixo o email:\n"+conteudo_email)
-    print(response.text)
+    return response.text
 

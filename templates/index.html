@@ -13,22 +13,22 @@
     </div>
     <div class="content">
         <div class="form">
-            <form action="/enviararquivo" method="post" enctype="multipart/form-data">
+            <form action="/enviararquivo" method="post" enctype="multipart/form-data" id="formArquivo">
                 <div class="upload-arq">
                     <input type="file" name="arquivo" id="arquivo" accept=".txt,.pdf">
                 </div>
                 <div>
-                    <button type="submit">enviar</button>
+                    <button type="submit" onclick="exibir_resposta()">enviar</button>
                 </div>
             </form>
         </div>
         <div class="response">
-            <div class="response-content">
-
+            <div class="response-content" id="response">
+                <p>{{ dados }}</p>
             </div>
         </div>
     </div>
     
-    
+<!-- <script src="../static/js/exibir_resposta.js"></script> -->
 </body>
 </html>
