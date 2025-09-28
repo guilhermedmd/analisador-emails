@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/responsive.css">
     <title>Analisador de e-mails</title>
 </head>
 <body>
@@ -18,17 +19,21 @@
                     <input type="file" name="arquivo" id="arquivo" accept=".txt,.pdf">
                 </div>
                 <div>
-                    <button type="submit" onclick="exibir_resposta()">enviar</button>
+                    <button type="submit" onclick="exibir_loading()">Enviar</button>
                 </div>
             </form>
         </div>
         <div class="response">
+            <h2>Visualize sua resposta aqui</h2>
             <div class="response-content" id="response">
+                <div class="loading" id="loading">
+                    <img id="img_loading" src="../static/assets/imgs/loading.gif" alt="loading">
+                </div>
                 <p>{{ dados }}</p>
-            </div>
+                </div>
         </div>
     </div>
     
-<!-- <script src="../static/js/exibir_resposta.js"></script> -->
+<script src="../static/js/exibir_loading.js"></script>
 </body>
 </html>

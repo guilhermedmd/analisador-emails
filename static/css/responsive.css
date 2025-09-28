@@ -1,0 +1,27 @@
+@media (max-width: 800px) { 
+*{
+    font-size: 25px;
+    margin: 10px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    
+}
+.form{
+    margin: auto auto;
+}
+input, button{
+    transform: scale(1.1);
+
+}
+.response{
+    width: 100%;
+    height: auto;
+}
+.response-content{
+    white-space: pre-wrap;
+    font-family: monospace;
+
+}
+}  
