@@ -25,14 +25,21 @@ Para utilizar a aplicação de forma local é necessário possuir uma IDE instal
 - Nesse momento o projeto já está pronto para rodar, porém falta um detalhe para que ele funcione 100% que é a chave de API do gemini. Para isso você pode acessar o link para pegar a sua chave de API: https://aistudio.google.com/
 
 - Agora substitua a API_KEY presente na linha 8 do arquivo gemini_api.py pela sua chave de API.
+  <br>
   
+  <img src="static\assets\imgs\git_imgs\api_key.png" />
 - Depois disso tudo o projeto está pronto para ser executado através do comando:
 ```bash
 python main.py
 ```
 
-### Caso você não queira executar todos esses comandos basta apenas acessar o projeto pelo link: https://analisadoremails.onrender.com/
+- ### Caso você não queira executar todos esses comandos basta apenas acessar o projeto pelo link: 
+<div align=center>
+  
+### https://analisadoremails.onrender.com/
 Divirta-se
+</div>
+
 
 ## Tecnologias utilizadas no desenvolvimento
 <div align=center>
@@ -43,8 +50,6 @@ Divirta-se
 <img height="75" width="75" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
 </div>
           
-          
-          
-                  
-
 ## Tela
+
+<img src="static\assets\imgs\git_imgs\principal.png" />
